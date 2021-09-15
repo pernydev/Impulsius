@@ -1,0 +1,24 @@
+{
+  "name": "impulsius",
+  "version": "0.0.1",
+  "description": "Impulsius is a Gaming Panel powered by Pterodactyl Panel Wings!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pernydev/Impulsius.git"
+  },
+  "author": "pernydev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pernydev/Impulsius/issues"
+  },
+  "homepage": "https://github.com/pernydev/Impulsius#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
