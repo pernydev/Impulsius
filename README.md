@@ -1,8 +1,6 @@
 <br />
 <p align="center">
-  <a href="https://github.com/pernydev/Impulsius">
-    <h1>Impulsius</h1>
-  </a>
+    [![Impulsius Logo](https://media.discordapp.net/attachments/860442342233866250/888032639808843796/Impulsius.png?width=1373&height=353 "Impulsius Logo")](https://github.com/pernydev/Impulsius "Impulsius Logo")
 
   <h3 align="center">The Gaming Panel from the future now.</h3>
 
