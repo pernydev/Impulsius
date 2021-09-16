@@ -15,10 +15,7 @@ console.log(SITE + 'Loading pages...');
 app.get('/', function (req, res) {
     res.render('frontend/pages/index', 
         { server: [
-            { name: 'Epic hub server', ramUsed: 10, ramAvl: 1024, cpuUsed: 2, cpuAvl: 100, diskUsed: 4024, diskAvl: 8024, ID: "92jd3578"},
-            { name: 'Epic event server', ramUsed: 10, ramAvl: 2024, cpuUsed: 9, cpuAvl: 100, diskUsed: 4024, diskAvl: 8024, ID: "73id0563"},
-            { name: 'Super Epic minigame server', ramUsed: 103, ramAvl: 2024, cpuUsed: 9, cpuAvl: 100, diskUsed: 4024, diskAvl: 8024, ID: "63y5967"},
-            { name: 'Very epic survival server', ramUsed: 10, ramAvl: 6024, cpuUsed: 2, cpuAvl: 100, diskUsed: 4224, diskAvl: 8024, ID: "37hj9472   s"}
+            { name: 'My Impulsius server', ramUsed: 745, ramAvl: 2048, cpuUsed: 74, cpuAvl: 100, diskUsed: 1764, diskAvl: 8192, ID: "92jd3578"}
         ]
     });
 });
