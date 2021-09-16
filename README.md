@@ -1,7 +1,7 @@
 <br />
 <p align="center">
     <img src="https://media.discordapp.net/attachments/860442342233866250/888032639808843796/Impulsius.png?width=1373&height=353 " alt="Logo" width="1373" height="353">
-  <h3 align="center">The Gaming Panel from the future now.</h3>
+  <h3 align="center">The Gaming Panel from the future, now.</h3>
 
   <p align="center">
    Host your servers in Impulsius with our customised Pterodactyl Wings!
