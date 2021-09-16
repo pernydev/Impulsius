@@ -1,6 +1,6 @@
 <br />
 <p align="center">
-    <img src="https://media.discordapp.net/attachments/860442342233866250/888032639808843796/Impulsius.png?width=1373&height=353 " alt="Logo" width="1373" height="353">
+    <img src="https://media.discordapp.net/attachments/860442342233866250/888032639808843796/Impulsius.png?width=1373&height=353 " alt="Logo" width="1273" height="253">
   <h3 align="center">The Gaming Panel from the future, now.</h3>
 
   <p align="center">
