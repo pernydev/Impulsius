@@ -1,17 +1,10 @@
 var express = require('express');
-const { exec } = require('child_process');
 var app = express();
 const colors = require('colors');
 
 var SITE = colors.bold.cyan("[Website] ");
 var INFO = colors.bold.green("[Info] ");
 var PORT = "8080";
-
-exec("mysqla --version", (error, stdout, stderr) => {
-    if(stderr) {
-        console.log(stderr);
-    }
-});
 
 console.log(SITE + 'Turning the website on...');
 app.set('view engine', 'ejs');
