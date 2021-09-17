@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Impulsius Installer</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="image-container set-full-height" style="background-image: url('assets/img/wizard-city.jpg')">
+	    <!--   Creative Tim Branding   -->
+	    <a href="http://creative-tim.com">
+	         <div class="logo-container">
+	            <div class="brand">
+	            	Impulsius
+	            </div>
+	        </div>
+	    </a>
+	    <!--   Big container   -->
+	    <div class="container">
+	        <div class="row">
+		        <div class="col-sm-8 col-sm-offset-2">
+		            <!--      Setup container        -->
+		            <div class="wizard-container">
+		                <div class="card wizard-card" data-color="orange" id="wizard">
+			                <form action="" method="">
+			                <!--        You can switch " data-color="rose" "  with one of the next bright colors: "blue", "green", "orange", "purple"        -->
+
+		                    	<div class="wizard-header">
+		                        	<h3 class="wizard-title">
+		                        		Welcome to Impulsius!
+		                        	</h3>
+									<h5>We hope you are as hyped as we to use our platform! Lets get you quickly started!</h5>
+		                    	</div>
+								<div class="wizard-navigation">
+									<ul>
+			                            <li><a href="#requirements" data-toggle="tab" style="pointer-events: none;">Requirements</a></li>
+			                            <li><a href="#settings" data-toggle="tab" style="pointer-events: none;">Configuration</a></li>
+			                            <li><a href="#install" data-toggle="tab" style="pointer-events: none;">Installation</a></li>
+			                            <li><a href="#user" data-toggle="tab" style="pointer-events: none;">Create a user</a></li>
+			                            <li><a href="#node" data-toggle="tab" style="pointer-events: none;">Setup a Node</a></li>
+			                            <li><a href="#done" data-toggle="tab" style="pointer-events: none;">Done!</a></li>
+			                        </ul>
+								</div>
+
+		                        <div class="tab-content">
+		                            <div class="tab-pane" id="settings">
+		                            	<div class="row">
+		                                	<div class="col-sm-12">
+		                                    	<h4 class="info-text"> Let's start with some basic settings!</h4>
+		                                	</div>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">App Name</label>
+		                                        	<input type="text" class="form-control" id="appName">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Owner Name</label>
+		                                        	<input type="text" class="form-control" id="ownerName">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Database Name</label>
+		                                        	<input type="text" class="form-control" id="dbName">
+		                                    	</div>
+		                            		</div>
+		                                	<div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Database Username</label>
+		                                        	<input type="text" class="form-control" id="dbUsername">
+		                                    	</div>
+		                            		</div>
+		                       		     </div>
+									</div>
+		                            <div class="tab-pane" id="requirements">
+		                                <h4 class="info-text">Let's see if you have gotten what it takes!</h4>
+		                                <div class="row">
+											<div class="col-sm-12">
+											<center>
+											<ul class="list-group list-group-flush">
+												<li class="list-group-item">NodeJS 12+ <span class="badge rounded-pill bg-success">Done</span></li>
+												<li class="list-group-item">Nginx <span class="badge rounded-pill bg-">Not installed</span></a></li>
+											  </ul>
+											  <p>All of the uninstalled packages are going to be installed during the install process.</p>
+											</center>
+		                                </div>
+										</div>
+		                            </div>
+		                            <div class="tab-pane" id="install">
+		                                <h4 class="info-text">Sit back, relax. We are installing Impulsius for you!</h4>
+		                                <div class="row">
+											<div class="col-sm-12">
+												<center>Installing the database</center>
+												<div class="progress progress-striped active">
+													<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+													</div>
+												  </div>
+											  </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="user">
+		                            	<div class="row">
+		                                	<div class="col-sm-12">
+		                                    	<h4 class="info-text">Let's create you a user!!</h4>
+		                                	</div>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Username</label>
+		                                        	<input type="text" class="form-control" id="appName">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Email Address
+													</label>
+		                                        	<input type="text" class="form-control" id="ownerName">
+		                                    	</div>
+		                                	</div>
+		                                	<div class="col-sm-5 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">First Name</label>
+		                                        	<input type="text" class="form-control" id="dbName">
+		                                    	</div>
+		                            		</div>
+		                                	<div class="col-sm-5">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Last Name</label>
+		                                        	<input type="text" class="form-control" id="dbUsername">
+		                                    	</div>
+		                            		</div>
+		                                	<div class="col-sm-10 col-sm-offset-1">
+		                                    	<div class="form-group label-floating">
+		                                        	<label class="control-label">Password</label>
+		                                        	<input type="password" class="form-control" id="dbName">
+		                                    	</div>
+		                            		</div>
+		                       		     </div>
+									</div>
+		                            <div class="tab-pane" id="node">
+		                                <h4 class="info-text">We have successfully installed the panel! Now its time to set it up.</h4>
+		                                <div class="row">
+											<div class="col-sm-12">
+												<h5>On your node please type the following command:</h5>
+												<code>sudo bash <(curl -s https://raw.githubusercontent.com/pernydev/Impulsius/assets/node.sh)</code>
+												<h5>After you have done that, it should ask you for a endpoint. Input the following:</h5>
+												<code>194.163.137.159:8080/nodes/install</code>
+												<h5>Then wait for it to be installed. And type the Wings Endpoint here.</h5> 
+												<div class="form-group label-floating">
+		                                        	<label class="control-label">Wings endpoint</label>
+		                                        	<input type="text" class="form-control" id="wingsEndpoint">
+		                                    	</div>
+											  </div>
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="done">
+		                                <div class="row">
+		                                    <h4 class="info-text"> Tada! You have Impulsius now. </h4>
+											<div class="col-sm-12">
+												<center>
+		                                    <h6>You have now a working version of Impulsius, on your machine.</center></h6></div>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wizard-footer">
+	                            	<div class="pull-right">
+	                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+	                                    <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' />
+	                                </div>
+	                                <div class="pull-left">
+	                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+	                                </div>
+		                            <div class="clearfix"></div>
+		                        </div>
+			                </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	        </div> <!-- row -->
+	    </div> <!--  big container -->
+	</div>
+
+</body>
+	<script src="assets/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+	<script src="assets/js/material-bootstrap-wizard.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+</html>
