@@ -33,69 +33,13 @@
 		                    	</div>
 								<div class="wizard-navigation">
 									<ul>
-			                            <li><a href="#requirements" data-toggle="tab" style="pointer-events: none;">Requirements</a></li>
-			                            <li><a href="#settings" data-toggle="tab" style="pointer-events: none;">Configuration</a></li>
+			                            <li><a href="#user" data-toggle="tab">Create a user</a></li>
+			                            <li><a href="#node" data-toggle="tab">Setup a Node</a></li>
+			                            <li><a href="#done" data-toggle="tab">Done!</a></li>
 			                        </ul>
 								</div>
 
 		                        <div class="tab-content">
-		                            <div class="tab-pane" id="settings">
-		                            	<div class="row">
-		                                	<div class="col-sm-12">
-		                                    	<h4 class="info-text"> Let's start with some basic settings!</h4>
-		                                	</div>
-		                                	<div class="col-sm-5 col-sm-offset-1">
-		                                    	<div class="form-group label-floating">
-		                                        	<label class="control-label">App Name</label>
-		                                        	<input type="text" class="form-control" id="appName">
-		                                    	</div>
-		                                	</div>
-		                                	<div class="col-sm-5">
-		                                    	<div class="form-group label-floating">
-		                                        	<label class="control-label">Owner Name</label>
-		                                        	<input type="text" class="form-control" id="ownerName">
-		                                    	</div>
-		                                	</div>
-		                                	<div class="col-sm-5 col-sm-offset-1">
-		                                    	<div class="form-group label-floating">
-		                                        	<label class="control-label">Database Name</label>
-		                                        	<input type="text" class="form-control" id="dbName">
-		                                    	</div>
-		                            		</div>
-		                                	<div class="col-sm-5">
-		                                    	<div class="form-group label-floating">
-		                                        	<label class="control-label">Database Username</label>
-		                                        	<input type="text" class="form-control" id="dbUsername">
-		                                    	</div>
-		                            		</div>
-		                       		     </div>
-									</div>
-		                            <div class="tab-pane" id="requirements">
-		                                <h4 class="info-text">Let's see if you have gotten what it takes!</h4>
-		                                <div class="row">
-											<div class="col-sm-12">
-											<center>
-											<ul class="list-group list-group-flush">
-												<li class="list-group-item">NodeJS 12+ <span class="badge rounded-pill bg-success">Done</span></li>
-												<li class="list-group-item">Nginx <span class="badge rounded-pill bg-">Not installed</span></a></li>
-											  </ul>
-											  <p>All of the uninstalled packages are going to be installed during the install process.</p>
-											</center>
-		                                </div>
-										</div>
-		                            </div>
-		                            <div class="tab-pane" id="install">
-		                                <h4 class="info-text">Sit back, relax. We are installing Impulsius for you!</h4>
-		                                <div class="row">
-											<div class="col-sm-12">
-												<center>Installing the database</center>
-												<div class="progress progress-striped active">
-													<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
-													</div>
-												  </div>
-											  </div>
-		                                </div>
-		                            </div>
 		                            <div class="tab-pane" id="user">
 		                            	<div class="row">
 		                                	<div class="col-sm-12">
@@ -155,14 +99,14 @@
 		                                    <h4 class="info-text"> Tada! You have Impulsius now. </h4>
 											<div class="col-sm-12">
 												<center>
-		                                    <h6>You have now a working version of Impulsius, on your machine.</center></h6></div>
+		                                    <p>You have now a working version of Impulsius, on your machine.</center></p></div>
 		                                </div>
 		                            </div>
 		                        </div>
 		                        <div class="wizard-footer">
 	                            	<div class="pull-right">
 	                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
-	                                    <input type='button' class='btn btn-next btn-fill btn-primary btn-wd' name='next' value='Next' />
+	                                    <input type='button' class='btn btn-finish btn-fill btn-primary btn-wd' name='finish' value='Finish' />
 	                                </div>
 	                                <div class="pull-left">
 	                                    <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />

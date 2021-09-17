@@ -35,6 +35,14 @@ app.get('/install', function (req, res) {
     res.render('frontend/pages/installer/install');
 });
 
+app.get('/installing', function (req, res) {
+    res.render('frontend/pages/installer/installing');
+});
+
+app.get('/setup', function (req, res) {
+    res.render('frontend/pages/installer/setup');
+});
+
 app.get('/server/:serverID', function (req, res) {
     res.render('frontend/pages/server/console', {
         server: {
