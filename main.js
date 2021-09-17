@@ -35,6 +35,10 @@ app.get('/auth/register', function (req, res) {
     res.render('frontend/pages/auth/register');
 });
 
+app.get('/install', function (req, res) {
+    res.render('frontend/pages/installer/install');
+});
+
 app.get('/server/:serverID', function (req, res) {
     res.render('frontend/pages/server/console', {
         server: {
