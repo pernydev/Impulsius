@@ -1,6 +1,9 @@
 var express = require('express');
+var installer = require('./views/backend/db/dbInstaller');
 var app = express();
 const colors = require('colors');
+
+installer.execLinux();
 
 var SITE = colors.bold.cyan("[Website] ");
 var INFO = colors.bold.green("[Info] ");

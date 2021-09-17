@@ -1,19 +1,13 @@
 const { exec } = require('child_process');
 
 function execLinux() {
-    //exec("sudo apt update", (error, stdout, stderr) => {});
+    exec("sudo apt update", (error, stdout, stderr) => {});
     exec("mysql --version", (error, stdout, stderr) => {
         if(stderr) {
-            console.log(stderr);
+            exec("sudo apt install mysql-server", (error, stdout, sterr) => {});
         }
     });
 
 }
 
-function execWindows() {
-    
-}
-
-/*
-if (process.platform === "win32") execWindows();
-else if(process.platform === "linux") execWindows();*/
+exports.execLinux = execLinux;
