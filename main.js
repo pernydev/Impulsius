@@ -47,9 +47,12 @@ app.get('/server/:serverID', function (req, res) {
     res.render('frontend/pages/server/console', {
         server: {
             "ID": req.params.serverID,
-            "details": [
-                { name: 'Epic hub server', ramUsed: 10, ramAvl: 1024, cpuUsed: 2, cpuAvl: 100, diskUsed: 4024, diskAvl: 8024},
-            ]
+            name: 'My Impulsius server', 
+            ramUsed: 745, 
+            ramAvl: 2048, cpuUsed: 74, 
+            cpuAvl: 100, diskUsed: 1764, 
+            diskAvl: 8192, 
+            ID: "92jd3578"
         }
     });
 });
