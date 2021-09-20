@@ -16,11 +16,12 @@ app.use(express.static("views/frontend/public"));
 
 console.log(SITE + 'Loading pages...');
 app.get('/', function (req, res) {
-    res.render('frontend/pages/index', 
-        { server: [
-            { name: 'My Impulsius server', ramUsed: 745, ramAvl: 2048, cpuUsed: 74, cpuAvl: 100, diskUsed: 1764, diskAvl: 8192, ID: "92jd3578"}
-        ]
-    });
+    res.render('frontend/pages/index',
+        {
+            server: [
+                { name: 'My Impulsius server', ramUsed: 745, ramAvl: 2048, cpuUsed: 74, cpuAvl: 100, diskUsed: 1764, diskAvl: 8192, ID: "92jd3578" }
+            ]
+        });
 });
 
 app.get('/auth/login', function (req, res) {
@@ -47,13 +48,38 @@ app.get('/server/:serverID', function (req, res) {
     res.render('frontend/pages/server/console', {
         server: {
             "ID": req.params.serverID,
-            name: 'My Impulsius server', 
-            ramUsed: 745, 
-            ramAvl: 2048, cpuUsed: 74, 
-            cpuAvl: 100, diskUsed: 1764, 
-            diskAvl: 8192, 
+            name: 'My Impulsius server',
+            ramUsed: 745,
+            ramAvl: 2048, cpuUsed: 74,
+            cpuAvl: 100, diskUsed: 1764,
+            diskAvl: 8192,
             ID: "92jd3578"
         }
+    });
+});
+
+app.get('/server/:serverID/files', function (req, res) {
+    res.render('frontend/pages/server/files', {
+        server: {
+            "ID": req.params.serverID,
+            "name": "My Impulsius server",
+            "ramUsed": 745,
+            "ramAvl": 2048,
+            "cpuUsed": 74,
+            "cpuAvl": 100,
+            "diskUsed": 1764,
+            "diskAvl": 8192,
+            "files": [
+              {
+                "name": "TestFile",
+                "type": "txt"
+              },
+              {
+                "name": "server.jar",
+                "type": "jar"
+              }
+            ]
+          }
     });
 });
 

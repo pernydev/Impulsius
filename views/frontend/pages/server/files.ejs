@@ -1,0 +1,55 @@
+<!doctype html>
+<%- include('../../components/head'); %>
+    <html lang="en" dir="ltr">
+
+    <body class="">
+        <div class="page">
+            <div class="page-main">
+                <%- include('../../components/nav'); %>
+                    <%- include('../../components/servernav'); %>
+                        <div class="my-3 my-md-5">
+                            <div class="container">
+                                <div class="page-header">
+                                    <h1 class="page-title">
+                                        Files
+                                    </h1>
+                                </div>
+                                <div class="container">
+                                    <div class="table-responsive">
+                                        <table class="table table-vcenter">
+                                            <tbody>
+                                                <% server.files.forEach(function(file) { %>
+                                                    <tr>
+                                                        <td><input type="checkbox">&nbsp;&nbsp; <%= file.name %></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td><%= file.type %></td>
+                                                        <td><div class="dropdown">
+                                                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                                              Actions
+                                                            </button>
+                                                            <div class="dropdown-menu">
+                                                              <a class="dropdown-item" href="#">
+                                                                Delete
+                                                              </a>
+                                                              <a class="dropdown-item" href="#">
+                                                                Rename
+                                                              </a>
+                                                            </div>
+                                                          </div></td>
+                                                    </tr>
+                                                <% }); %>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        </div>
+        <%- include('../../components/footer'); %>
+    </body>
+
+    </html>
