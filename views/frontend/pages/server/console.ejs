@@ -2,11 +2,12 @@
 <%- include('../../components/head'); %>
   <html lang="en" dir="ltr">
 
-  <body class="">
-    <div class="page">
+    <body class="vertical-layout vertical-menu-modern dark-layout 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" data-layout="dark-layout">
+    <div class="page">  
       <div class="page-main">
         <%- include('../../components/nav'); %>
-            <div class="my-3 my-md-5">
+        <%- include('../../components/servermenu') %>
+             <div class="my-3 my-md-5">
               <div class="container">
                 <div class="page-header">
                   <h1 class="page-title">
@@ -21,8 +22,7 @@
                         <div class="card-body">
                           <h3 class="card-title">
                             <center><i class="fas fa-server"></i>
-                              <%= server.name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color: rgb(0, 202, 0);"><i
-                                    class="fas fa-circle"></i></span> Running
+                              <%= server.name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Online
                             </center>
                           </h3>
                           <p>
@@ -52,10 +52,7 @@
                   <div class="row justify-content-around">
                     <div class="col-8">
                       <div class="input-group mb-2">
-                        <span class="input-group-text">
-                          $
-                        </span>
-                        <input type="text" class="form-control"  autocomplete="off">
+                        <input type="text" placeholder="Send command" class="form-control"  autocomplete="off">
                       </div>
                     </div>
                   </div>
@@ -65,7 +62,6 @@
       </div>
     </div>
     </div>
-    <%- include('../../components/footer'); %>
   </body>
 
   </html>
