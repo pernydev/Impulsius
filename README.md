@@ -4,6 +4,7 @@
   <h3 align="center">The Gaming Panel from the future, now.</h3>
 
   <p align="center">
+    (Under construction)
    Host your servers in Impulsius with our customised Pterodactyl Wings!
     <br />
     <a href="#"><strong>Explore the docs (Coming Soon) »</strong></a>
@@ -117,7 +118,7 @@ Contributions are what make the open source community such an amazing place to l
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See https://github.com/pernydev/Impulsius/blob/main/LICENSE for more information.
 
 
 
