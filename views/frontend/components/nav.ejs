@@ -1,20 +1,25 @@
-<div class="header py-4">
-    <div class="container">
-      <div class="d-flex">
-        <a class="header-brand" href="/">
-          Impulsius
-        </a>
-        <div class="d-flex order-lg-2 ml-auto">
-          <div class="nav-item d-none d-md-flex">
-            <a href="javascript:void(0)" class="btn btn-sm" target="_blank">Account Settings</a>
-          </div>
-          <div class="nav-item d-none d-md-flex">
-            <a href="/auth/login" class="btn btn-sm btn-outline-primary">Logout</a>
-          </div>
+<div class="header-navbar-shadow"></div>
+<nav class="header-navbar main-header-navbar navbar-expand-lg navbar navbar-with-menu fixed-top navbar-dark">
+    <div class="navbar-wrapper">
+        <div class="navbar-container content">
+            <div class="navbar-collapse" id="navbar-mobile">
+                <div class="mr-auto float-left bookmark-wrapper d-flex align-items-center">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item mobile-menu d-xl-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href=""><i class="ficon bx bx-menu"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav">
+                    </ul>
+                </div>
+                <ul class="nav navbar-nav float-right">
+                    <li class="dropdown dropdown-user nav-item"><a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown">
+                            <div class="user-nav d-sm-flex d-none"><span class="user-name"><%= user.name %></span><span class="user-status text-muted"><%= user.email %></span></div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right pb-0"><a class="dropdown-item" href="#"><i class="bx bx-user mr-50"></i> Edit Profile</a>
+                            <div class="dropdown-divider mb-0"></div><a class="dropdown-item" href="#"><i class="bx bx-power-off mr-50"></i> Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <a href="#" class="header-toggler d-lg-none ml-3 ml-lg-0" data-toggle="collapse" data-target="#headerMenuCollapse">
-          <span class="header-toggler-icon"></span>
-        </a>
-      </div>
     </div>
-  </div>
+</nav>

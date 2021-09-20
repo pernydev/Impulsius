@@ -20,7 +20,14 @@ app.get('/', function (req, res) {
         {
             server: [
                 { name: 'My Impulsius server', ramUsed: 745, ramAvl: 2048, cpuUsed: 74, cpuAvl: 100, diskUsed: 1764, diskAvl: 8192, ID: "92jd3578" }
-            ]
+            ],
+            app: {
+                name: "Impulsius"
+            },
+            user: {
+                name: "DemoUser",
+                email: "email@example.com"
+            }
         });
 });
 
@@ -54,6 +61,13 @@ app.get('/server/:serverID', function (req, res) {
             cpuAvl: 100, diskUsed: 1764,
             diskAvl: 8192,
             ID: "92jd3578"
+        },
+        app: {
+            name: "Impulsius"
+        },
+        user: {
+            name: "DemoUser",
+            email: "email@example.com"
         }
     });
 });
