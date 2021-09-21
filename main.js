@@ -93,7 +93,14 @@ app.get('/server/:serverID/files', function (req, res) {
                 "type": "jar"
               }
             ]
-          }
+        },
+        app: {
+            name: "Impulsius"
+        },
+        user: {
+            name: "DemoUser",
+            email: "email@example.com"
+        }
     });
 });
 

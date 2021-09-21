@@ -1,12 +1,12 @@
 <!doctype html>
 <%- include('../../components/head'); %>
-    <html lang="en" dir="ltr">
+    <html class="loading" lang="en" data-textdirection="ltr">
 
-    <body class="">
+        <body class="vertical-layout vertical-menu-modern dark-layout 2-columns  navbar-sticky footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="2-columns" data-layout="dark-layout">
         <div class="page">
             <div class="page-main">
                 <%- include('../../components/nav'); %>
-                    <%- include('../../components/servernav'); %>
+                    <%- include('../../components/servermenu'); %>
                         <div class="my-3 my-md-5">
                             <div class="container">
                                 <div class="page-header">
@@ -49,7 +49,6 @@
             </div>
         </div>
         </div>
-        <%- include('../../components/footer'); %>
     </body>
 
     </html>
